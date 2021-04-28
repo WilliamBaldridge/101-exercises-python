@@ -1,3 +1,94 @@
+# # Welcome to 101 Exercises for Python Fundamentals
+# 
+# Solving these exercises will help make you a better programmer. Solve them in order, because each solution builds scaffolding, working code, and knowledge you can use on future problems. Read the directions carefully, and have fun!
+# 
+# > "Learning to program takes a little bit of study and a *lot* of practice" - Luis Montealegre
+
+# ## Getting Started
+# 0. Create your own account on [Kaggle.com](https://www.kaggle.com/account/login?phase=startRegisterTab) and return to this page.
+# 1. Click the blue "Copy and Edit" in the upper-right part of this document to create your own copy to your own Kaggle account.
+# 2. As you complete exercises, be sure to click the blue "Save" button to create save points for your work.
+# 3. If you need to refresh and restart this learning environment, go to **Run** then select **Restart Session**. 
+# 4. If you need a fresh, blank copy of this document, go to https://www.kaggle.com/ryanorsinger/101-exercises/ and click "Copy and Edit"
+
+# ## Orientation
+# - This code notebook is composed of cells. Each cell is either text or Python code.
+# - To run a cell of code, click the "play button" icon to the left of the cell or click on the cell and press "Shift+Enter" on your keyboard. This will execute the Python code contained in the cell. Executing a cell that defines a variable is important before executing or authoring a cell that depends on that previously created variable assignment.
+# - **Expect to see lots of errors** the first time you load this page. 
+# - **Expect to see lots of errors** for all cells run without code that matches the assertion tests.
+# - Until you click the blue "Copy and Edit" button to make your own copy, you will see an entire page of errors. This is part of the automated tests.
+# - Each *assert* line is both an example and a test that tests for the presence and functionality of the instructed exercise. 
+# 
+# ## The only 3 conditions that produce no errors:
+# 1. When you make a fresh **copy** of the project to your own account (by clicking "Copy and Edit")
+# 2. When you go to "Run" and then click "Restart Session"
+# 3. When every single assertion passes.
+# 
+# 
+# ## Outline
+# - Each cell starts with a problem statement that describes the exercise to complete.
+# - Underneath each problem statement, learners will need to write code to produce an answer.
+# - The **assert** lines test to see that your code solves the problem appropriately
+# - Many exercises will rely on previous solutions to be correctly completed
+# - The `print("Exercise is complete")` line will only run if your solution passes the assertion test(s)
+# - Be sure to create programmatic solutions that will work for all inputs:
+# - For example, calling the `is_even(2)` returns `True`, but your function should work for all even numbers, both positive and negative.
+# 
+# 
+# ## Guidance
+# - Get Python to do the work for you. For example, if the exercise instructs you to reverse a list of numbers, your job is to find the 
+# - Save often by clicking the blue "Save" button.
+# - If you need to clear the output or reset the notebook, go to "Run" then "Restart Session" to clear up any error messages.
+# - Do not move or alter the lines of code that contain the `assert` statements. Those are what run your solution and test its actual output vs. expected outputs.
+# - Seek to understand the problem before trying to solve it. Can you explain the problem to someone else in English? Can you explain the solution in English?
+# - Slow down and read any error messages you encounter. Error messages provide insight into how to resolve the error. When in doubt, put your exact error into a search engine and look for results that reference an identical or similar problem.
+# 
+# ## Get Python To Do The Work For You
+# One of the main jobs of a programming language is to help people solve problems programatically, so we don't have to do so much by hand. For example, it's easy for a person to manually reverse the list `[1, 2, 3]`, but imagine reversing a list of a million things or sorting a list of even a hundred things. When we write programmatic solutions in code, we are providing instructions to the computer to do a task. Computers follow the letter of the code, not the intent, and do exactly what they are told to do. In this way, Python can reverse a list of 3 numbers or 100 numbers or ten million numbers with the same instructions. Repetition is a key idea behind programming languages.
+# 
+# This means that your task with these exercises is to determine a sequence of steps that solve the problem and then find the Python code that will run those instructions. If you're sorting or reversing things by hand, you're not doing it right!
+# 
+# ## How To Discover How To Do Something in Python
+# 1. The first step is to make sure you know what the problem is asking.
+# 2. The second step is to determine, in English (or your first spoken language), what steps you need to take.
+# 3. Use a search engine to look for code examples to identical or similar problems.
+# 
+# One of the best ways to discover how to do things in Python is to use a search engine. Go to your favorite search engine and search for "how to reverse a list in Python" or "how to sort a list in Python". That's how both learners and professionals find answers and examples all the time. Search for what you want and add "in Python" and you'll get lots of code examples. Searching for "How to sum a list of numbers in Python" is a very effective way to discover exactly how to do that task.
+
+# ### Learning to Program and Code
+# - You can make a new blank cell for Python code at any time in this document.
+# - If you want more freedom to explore learning Python in a blank notebook, go here https://www.kaggle.com/notebooks/welcome and make yourself a blank, new notebook.
+# - Programming is an intellectual activity of designing a solution. "Coding" means turning your programmatic solution into code w/ all the right syntax and parts of the programming language.
+# - Expect to make mistakes and adopt the attitude that **the error message provides the information you need to proceed**. You will put lots of error messages into search engines to learn this craft!
+# - Because computers have zero ability to read in between the lines or "catch the drift" or know what you mean, code only does what it is told to do.
+# - Code doesn't do what you *want* it to do, code does what you've told it to do.
+# - Before writing any code, figure out how you would solve the problem in spoken language to describe the sequence of steps in the solution.
+# - Think about your solution in English (or your natural language). It's **critical** to solve the problem in your natural language before trying to get a programming language to do the work.
+
+# ## Troubleshooting
+# - If this entire document shows "Name Error" for many cells, it means you should read the "Getting Started" instructions above to make your own copy.
+# - Be sure to commit your work to make save points, as you go.
+# - If you load this page and you see your code but not the results of the code, be sure to run each cell (shift + Enter makes this quick)
+# - "Name Error" means that you need to assign a variable or define the function as instructed.
+# - "Assertion Error" means that your provided solution does not match the correct answer.
+# - "Type Error" means that your data type provided is not accurate
+# - If your kernel freezes, click on "Run" then select "Restart Session"
+# - If you require additional troubleshooting assistance, click on "Help" and then "Docs" to access documentation for this platform.
+# - If you have discoverd a bug or typo, please triple check your spelling then create a new issue at [https://github.com/ryanorsinger/101-exercises/issues](https://github.com/ryanorsinger/101-exercises/issues) to notify the author.
+
+# In[ ]:
+
+
+# Example problem:
+# Uncomment the line below and run this cell.
+# The hashtag "#" character in a line of Python code is the comment character. 
+doing_python_right_now = True
+
+# The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
+assert doing_python_right_now == True, "If you see a NameError, it means that the variable is not created and assigned a value. An 'Assertion Error' means that the value of the variable is incorrect." 
+print("Exercise 0 is correct") # This line will print if your solution passes the assertion above.
+
+
 # Exercise 1
 # On the line below, create a variable named on_mars_right_now and assign it the boolean value of False
 on_mars_right_now = False
@@ -147,6 +238,8 @@ print("The plus_two assertions executed appropriately... The second function def
 
 # Exercise 11
 # Write a function definition for a function named add_one that takes in a number and returns that number plus one.
+def add_one(number):
+    return number + 1
 
     
 assert add_one(2) == 3, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -161,6 +254,12 @@ print("Exercise 11 is correct.")
 
 # Exercise 12
 # Write a function definition named is_positive that takes in a number and returns True or False if that number is positive.
+def is_positive(number):
+    if number >= 0:
+        return True
+    else:
+        return False
+
 
 assert is_positive(positive_odd_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_positive(positive_even_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -174,6 +273,11 @@ print("Exercise 12 is correct.")
 
 # Exercise 13
 # Write a function definition named is_negative that takes in a number and returns True or False if that number is negative.
+def is_negative(number):
+    if number < 0:
+        return True
+    else:
+        return False
 
 assert is_negative(positive_odd_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_negative(positive_even_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -187,6 +291,12 @@ print("Exercise 13 is correct.")
 
 # Exercise 14
 # Write a function definition named is_odd that takes in a number and returns True or False if that number is odd.
+def is_odd(number):
+    remainder = number % 2
+    if remainder != 0:
+        return True
+    else:
+        return False
 
 assert is_odd(positive_odd_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_odd(positive_even_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -200,6 +310,12 @@ print("Exercise 14 is correct.")
 
 # Exercise 15
 # Write a function definition named is_even that takes in a number and returns True or False if that number is even.
+def is_even(number):
+    remainder = number % 2
+    if remainder == 0:
+        return True
+    else:
+        return False
 
 assert is_even(2) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_even(positive_odd_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -214,6 +330,8 @@ print("Exercise 15 is correct.")
 
 # Exercise 16
 # Write a function definition named identity that takes in any argument and returns that argument's value. Don't overthink this one!
+def identity(input):
+    return input
 
 assert identity(fruits) == fruits, "Ensure that the function is defined, named properly, and returns the correct value"
 assert identity(vegetables) == vegetables, "Ensure that the function is defined, named properly, and returns the correct value"
@@ -229,6 +347,11 @@ print("Exercise 16 is correct.")
 
 # Exercise 17
 # Write a function definition named is_positive_odd that takes in a number and returns True or False if the value is both greater than zero and odd
+def is_positive_odd(number):
+    if is_positive(number) and is_odd(number):
+        return True
+    else:
+        return False
 
 assert is_positive_odd(3) == True, "Double check your syntax and logic" 
 assert is_positive_odd(positive_odd_number) == True, "Double check your syntax and logic"
@@ -243,6 +366,11 @@ print("Exercise 17 is correct.")
 
 # Exercise 18
 # Write a function definition named is_positive_even that takes in a number and returns True or False if the value is both greater than zero and even
+def is_positive_even(number):
+    if is_positive(number) and is_even(number):
+        return True
+    else:
+        return False
 
 assert is_positive_even(4) == True, "Double check your syntax and logic" 
 assert is_positive_even(positive_odd_number) == False, "Double check your syntax and logic"
@@ -257,6 +385,11 @@ print("Exercise 18 is correct.")
 
 # Exercise 19
 # Write a function definition named is_negative_odd that takes in a number and returns True or False if the value is both less than zero and odd.
+def is_negative_odd(number):
+    if is_negative(number) and is_odd(number):
+        return True
+    else:
+        return False
 
 assert is_negative_odd(-3) == True, "Double check your syntax and logic" 
 assert is_negative_odd(positive_odd_number) == False, "Double check your syntax and logic"
@@ -271,6 +404,11 @@ print("Exercise 19 is correct.")
 
 # Exercise 20
 # Write a function definition named is_negative_even that takes in a number and returns True or False if the value is both less than zero and even.
+def is_negative_even(number):
+    if is_negative(number) and is_even(number):
+        return True
+    else:
+        return False
 
 assert is_negative_even(-4) == True, "Double check your syntax and logic" 
 assert is_negative_even(positive_odd_number) == False, "Double check your syntax and logic"
