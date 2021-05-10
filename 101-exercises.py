@@ -1340,7 +1340,7 @@ print("Exercise 76 is correct.")
 # Exercise 77
 # Write a function definition named only_positive_evens that takes in sequence of numbers and returns a list containing all the positive evens from the sequence
 def only_positive_evens(numbers):
-    return [only_positive_numbers(numbers), only_even_numbers(numbers)]
+    
 
 assert only_positive_evens([1, -2, 3]) == []
 assert only_positive_evens([2, -5, -6]) == [2]
