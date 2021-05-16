@@ -1340,6 +1340,7 @@ print("Exercise 76 is correct.")
 # Exercise 77
 # Write a function definition named only_positive_evens that takes in sequence of numbers and returns a list containing all the positive evens from the sequence
 def only_positive_evens(numbers):
+    return list(filter(lambda x: x > 0 and x % 2 == 0, numbers))
     
 
 assert only_positive_evens([1, -2, 3]) == []
@@ -1354,6 +1355,9 @@ print("Exercise 77 is correct.")
 
 # Exercise 78
 # Write a function definition named only_positive_odds that takes in sequence of numbers and returns a list containing all the positive odd numbers from the sequence
+def only_positive_odds(numbers):
+    return list(filter(lambda x: x > 0 and x % 2 != 0, numbers))
+
 
 assert only_positive_odds([1, -2, 3]) == [1, 3]
 assert only_positive_odds([2, -5, -6]) == []
@@ -1367,6 +1371,9 @@ print("Exercise 78 is correct.")
 
 # Exercise 79
 # Write a function definition named only_negative_evens that takes in sequence of numbers and returns a list containing all the negative even numbers from the sequence
+def only_negative_evens(numbers):
+    return list(filter(lambda x: x < 0 and x % 2 == 0, numbers))
+
 
 assert only_negative_evens([1, -2, 3]) == [-2]
 assert only_negative_evens([2, -5, -6]) == [-6]
@@ -1380,6 +1387,8 @@ print("Exercise 79 is correct.")
 
 # Exercise 80
 # Write a function definition named only_negative_odds that takes in sequence of numbers and returns a list containing all the negative odd numbers from the sequence
+def only_negative_odds(numbers):
+    return list(filter(lambda x: x < 0 and x % 2 != 0, numbers))
 
 assert only_negative_odds([1, -2, 3]) == []
 assert only_negative_odds([2, -5, -6]) == [-5]
@@ -1393,6 +1402,9 @@ print("Exercise 80 is correct.")
 
 # Exercise 81
 # Write a function definition named shortest_string that takes in a list of strings and returns the shortest string in the list.
+def shortest_string(list):
+   return min(list, key = len)
+
 
 assert shortest_string(["kiwi", "mango", "strawberry"]) == "kiwi"
 assert shortest_string(["hello", "everybody"]) == "hello"
@@ -1405,6 +1417,14 @@ print("Exercise 81 is correct.")
 
 # Exercise 82
 # Write a function definition named longest_string that takes in sequence of strings and returns the longest string in the list.
+def longest_string(list):
+    # max_len = -1
+    # for string in list:
+    #     if len(string) > max_len:
+    #         max_len = len(string)
+    #         res = string
+    # return res
+    return max(list, key = len)
 
 assert longest_string(["kiwi", "mango", "strawberry"]) == "strawberry"
 assert longest_string(["hello", "everybody"]) == "everybody"
