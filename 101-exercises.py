@@ -1820,7 +1820,6 @@ print("Exercise 100 is complete.")
 # Be sure to do this as programmatically as possible. 
 # Hint: Similarly to how we sometimes begin a function with setting a variable to zero, we need a starting place:
 # Hint: Consider creating a variable that is a dictionary with the keys "price" and "quantity" both set to 0. You can then compare each item's price and quantity total to the one from "most"
-
 def most_spent_on_item(cart):
     basePrice = {
         "title": "floor",
@@ -1831,6 +1830,7 @@ def most_spent_on_item(cart):
         if (p["price"] * p["quantity"] > basePrice["price"] * basePrice["quantity"]):
             basePrice = p
     return basePrice
+    
 
 assert most_spent_on_item(shopping_cart) == {
     "title": "chocolate",
